@@ -1,12 +1,5 @@
 import streamlit as st
 
-# Set the title of the app
-st.title("Welcome to My Personal Website!")
-
-import streamlit as st
-
-st.title("My Personal Website")
-
 # Create tabs
 tabs = st.tabs(["Home", "About Me", "Projects", "Contact"])
 
