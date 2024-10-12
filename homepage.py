@@ -1,15 +1,14 @@
 import streamlit as st
 
-import streamlit as st
-
 st.title("My Personal Website")
 
-# Create navigation buttons
-if st.button("Home"):
+page = st.selectbox("Choose a page:", ["Home", "About Me", "Projects", "Contact"])
+
+if page == "Home":
     st.write("Welcome to my homepage!")
-elif st.button("About Me"):
+elif page == "About Me":
     st.write("This is the About Me page.")
-elif st.button("Projects"):
+elif page == "Projects":
     st.write("Here are my projects.")
-elif st.button("Contact"):
+elif page == "Contact":
     st.write("Contact information goes here.")
