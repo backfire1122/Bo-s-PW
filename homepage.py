@@ -1,23 +1,18 @@
 import streamlit as st
 
-st.title("My Personal Website")
+st.title("Vicky Bo Peng")
 
-col1, col2 = st.columns(2)
+# Create tabs
+tabs = st.tabs(["Home", "About Me", "Projects", "Contact"])
 
-with col1:
-    if st.button("Home"):
-        st.write("Welcome to my homepage!")
+with tabs[0]:
+    st.write("Welcome to my homepage!")
 
-with col2:
-    if st.button("About Me"):
-        st.write("This is the About Me page.")
+with tabs[1]:
+    st.write("This is the About Me page.")
 
-col3, col4 = st.columns(2)
+with tabs[2]:
+    st.write("Here are my projects.")
 
-with col3:
-    if st.button("Projects"):
-        st.write("Here are my projects.")
-
-with col4:
-    if st.button("Contact"):
-        st.write("Contact information goes here.")
+with tabs[3]:
+    st.write("Contact information goes here.")
