@@ -2,13 +2,21 @@ import streamlit as st
 
 st.title("My Personal Website")
 
-page = st.selectbox("Choose a page:", ["Home", "About Me", "Projects", "Contact"])
+# Create columns for navigation
+col1, col2, col3, col4 = st.columns(4)
 
-if page == "Home":
-    st.write("Welcome to my homepage!")
-elif page == "About Me":
-    st.write("This is the About Me page.")
-elif page == "Projects":
-    st.write("Here are my projects.")
-elif page == "Contact":
-    st.write("Contact information goes here.")
+with col1:
+    if st.button("Home"):
+        st.write("Welcome to my homepage!")
+
+with col2:
+    if st.button("About Me"):
+        st.write("This is the About Me page.")
+
+with col3:
+    if st.button("Projects"):
+        st.write("Here are my projects.")
+
+with col4:
+    if st.button("Contact"):
+        st.write("Contact information goes here.")
