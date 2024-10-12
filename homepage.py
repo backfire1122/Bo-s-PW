@@ -1,16 +1,15 @@
 import streamlit as st
 
-# Create tabs
-tabs = st.tabs(["Home", "About Me", "Projects", "Contact"])
+st.title("My Personal Website")
 
-with tabs[0]:
+with st.expander("Home"):
     st.write("Welcome to my homepage!")
 
-with tabs[1]:
+with st.expander("About Me"):
     st.write("This is the About Me page.")
 
-with tabs[2]:
+with st.expander("Projects"):
     st.write("Here are my projects.")
 
-with tabs[3]:
+with st.expander("Contact"):
     st.write("Contact information goes here.")
